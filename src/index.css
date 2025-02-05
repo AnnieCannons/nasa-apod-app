@@ -198,3 +198,18 @@ footer button:hover {
     width: 100vw;
   }
 }
+
+.yesterday-btn {
+  background: #1f2937;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.yesterday-btn:hover {
+  color: #5d3b5b,
+}
