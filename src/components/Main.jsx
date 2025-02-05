@@ -1,15 +1,16 @@
 export default function Main(props) {
-    const { data } = props
+    const { data, yesterdayData } = props
+    const displayData = yesterdayData || data;
     return (
         <div className="imgContainer">
-            {data.media_type === 'video' ? (
+            {displayData.media_type === 'video' ? (
                 <iframe
                     id="inlineFrameExample"
-                    title={data.title}
+                    title={displayData.title}
                     className="bgImage"
-                    src={data.url}>
+                    src={displayData.url}>
                 </iframe>) : (
-                    <img src={data.hdurl} alt={data.title || 'bg-img'} className="bgImage" />
+                    <img src={displayData.hdurl} alt={displayData.title || 'bg-img'} className="bgImage" />
         )}
  </div >
     )
