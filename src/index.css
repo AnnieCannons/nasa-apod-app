@@ -138,6 +138,12 @@ footer button:hover {
   transition-duration: 200ms;
   padding: 1rem 0;
 }
+.sidebarContents .yesterdayButton {
+  margin-top: 1rem;
+  background-color: rgb(87, 146, 198);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
 
 .sidebarContents button:hover {
   opacity: 0.7;
