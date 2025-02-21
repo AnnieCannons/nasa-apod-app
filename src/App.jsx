@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import Main from "./components/Main"
 import SideBar from "./components/SideBar"
 
+
 function App() {
   const [data, setData] = useState(null)
   const [showModal, setShowModal] = useState(false)
@@ -13,7 +14,7 @@ function App() {
 
   useEffect(() => {
     async function fetchAPIData() {
-      const NASA_KEY = "[YOUR KEY HERE]"
+      const NASA_KEY = "kvW34QoS2bkx8aILtNw3sw7hcenNCFmCGNnvOQok"
       const url = 'https://api.nasa.gov/planetary/apod' + `?api_key=${NASA_KEY}`
       try {
         const res = await fetch(url)
@@ -32,7 +33,7 @@ function App() {
     <>
       {data ? (<Main data={data} />) : (
         <div className="loadingState">
-          <i className="fa-solid fa-gear"></i>
+         Loading...
         </div>
       )}
       {showModal && (
